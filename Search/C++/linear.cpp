@@ -2,10 +2,8 @@
 using namespace std;
 bool search(int a[],int x,int n)
 {
-int flag=0;
 for(int i=0;i<n;i++)
 if(a[i]==x){
-flag=1;
 return 1;
 }
 return 0;
