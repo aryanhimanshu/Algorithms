@@ -5,6 +5,4 @@ def bubble_sort(obj):
                 swap(obj, k, k-1)
 
 def swap(obj, x, y):
-    temp = obj[x]
-    obj[x] = obj[y]
-    obj[y] = temp
+    obj[x],obj[y]=obj[y],obj[x]
