@@ -1,2 +1,2 @@
 # Algorithms
-Searching, Sorting &amp; Data Structures
+##Searching, Sorting &amp; Data Structures
