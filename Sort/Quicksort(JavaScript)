@@ -1,0 +1,39 @@
+
+const swap = (array, firstIndex, secondIndex) => [array[firstIndex], array[secondIndex]] = [array[secondIndex], array[firstIndex]];
+
+function partition(array, left, right) {
+
+  const middle = Math.floor((right + left) / 2);
+  const pivot = array[middle];
+  let i = left;
+  let j = right;
+
+  while (i <= j) {
+    while (array[i] < pivot) i++;
+    while (array[j] > pivot) j--;
+    if (i <= j) {
+      swap(array, i, j);
+      i++;
+      j--;
+    }
+  }
+  return i;
+}
+function quickSort(array, left, right) {
+
+  let pivot;
+
+  if ( array.length > 1 ) {
+      left = typeof left != "number" ? 0 : left;
+      right = typeof right != "number" ? array.length - 1 : right;
+
+      pivot = partition(array, left, right);
+
+      if ( left < pivot - 1 ) quickSort(array, left, pivot - 1);
+      if ( pivot < right ) quickSort(array, pivot, right);
+  }
+  return array;
+}
+const array = [4, 2, 1, 0, 5];
+
+console.log(quickSort(array));
