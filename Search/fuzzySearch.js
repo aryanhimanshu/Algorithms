@@ -9,7 +9,7 @@
 
 'use strict';
 
-function fuzzysearch (needle, haystack) {
+function fuzzySearch (needle, haystack) {
   var haystack_length = haystack.length;
   var needle_length = needle.length;
   if (needle_length > haystack_length) {
