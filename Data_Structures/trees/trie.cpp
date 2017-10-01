@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long int ll;
+ll ii,i,at;
+
 struct no{
 	no* nxt[26];
 	no *root;
