@@ -109,4 +109,3 @@ L1:									;This loop translates an int up to 3
 intToString ENDP
 
 END main
-	
