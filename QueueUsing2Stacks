@@ -1,0 +1,57 @@
+#include<iostream>
+#include<algorithm>
+#include<stack>
+using namespace std;
+//Implementation of queue with 2 stacks
+class Queue{
+    stack<int> s1; //For Enqueue
+    stack<int> s2; //For Dequeue
+public:
+    void EnQueue(int data){
+        s1.push(data);
+    }
+    int DeQueue(){
+        if(!s2.empty()){
+            int data= s2.top();
+            s2.pop();
+            return data;
+        }else{
+            while(!s1.empty()){
+                int data=s1.top();
+                s2.push(data);
+                s1.pop();
+            }
+            int front=s2.top();
+            s2.pop();
+            swap(s1,s2);
+            return front;
+        }
+    }
+    void printQueue(){
+        cout<<"Queue contains"<<endl;
+        stack<int> printStack;
+        while(!s1.empty()){
+            int data=s1.top();
+            printStack.push(data);
+            s1.pop();
+        }
+        while(!printStack.empty()){
+            int data=printStack.top();
+            cout<<data<<" ";
+            s1.push(data);
+            printStack.pop();
+        }
+        return;
+    }
+};
+int main(){
+    Queue q;
+    q.EnQueue(3);
+    q.EnQueue(4);
+    q.printQueue();
+    int data=q.DeQueue();
+    cout<<endl<<data;
+    return 0;
+}
+
+
