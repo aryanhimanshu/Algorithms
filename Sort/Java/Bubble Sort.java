@@ -35,7 +35,6 @@ public class tester {
 			}
 			
 			bubble(arr,n);
-		
 	}
 
 }
