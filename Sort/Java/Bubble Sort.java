@@ -23,13 +23,10 @@ public class tester {
 	public static void main(String[] args) {
 		
 		Scanner sc= new Scanner (System.in);
-		
-			System.out.println("Enter size of array to be sorted");
-			int n=sc.nextInt();
 			
-			System.out.println("Enter elements of array");
+			System.out.println("Element array is 5, 3, 2, 6, 7, 9");
 			
-			int[] arr=new int[n];
+			int[] arr=new int[5, 3, 2, 6, 7, 9];
 			for(int j=0;j<n;j++){
 				arr[j]=sc.nextInt();
 			}
