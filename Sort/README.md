@@ -2,5 +2,7 @@
 1. Selection Sort
 2. insertion Sort
 3. Bubble Sort
-4. RAdix Sort
+4. Radix Sort
 5. Merge Sort
+6. Quick Sort
+7. Counting Sort

@@ -1,2 +1,6 @@
-Update this file also.
-write aout trees 
+1. AVL Tree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/AVLTree.java)
+2. Binary Search Tree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/BinarySearchTree.java)
+3. Interval Tree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/IntervalTree.java)
+4. K-Dimensional Tree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/KdTree.java)
+5. QuadTree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/QuadTree.java)
+6. Radix Tree [Java](https://github.com/aryanhimanshu/Algorithms/blob/master/Data_Structures/trees/Java/RadixTree.java)
